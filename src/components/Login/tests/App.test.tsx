@@ -1,7 +1,7 @@
 //통합테스트
 
 import { render, screen, fireEvent } from "@testing-library/react";
-import App from "../ui/App";
+import App from "../../../App";
 import { beforeEach, expect, test } from "vitest";
 import "@testing-library/jest-dom";
 import { useAuthStore } from "../store/useAuthStore";
