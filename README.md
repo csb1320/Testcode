@@ -8,27 +8,23 @@
 ## 📁 프로젝트 구조
 
 Testcode
-├── ExpressServer # 백엔드 Express API 서버
-│ └── server.js
-│
-├── Frontend # 프론트엔드 + 테스트
-│ ├── cypress # E2E 테스트 (Cypress)
-│ │ └── e2e/app.cy.js
-│ │
-│ └── src/components
-│ ├── Counter # 예제 1 (카운터 단위테스트)
-│ └── Login # 예제 2 (로그인 흐름 테스트)
-│ ├── pages
-│ ├── store
-│ └── tests
-│ ├── App.test.tsx # ✅ 통합 테스트
-│ ├── Login.test.tsx # ✅ 단위 테스트
-│ ├── Dashboard.test.tsx # ✅ 단위 테스트
-│ └── useAuth.test.tsx # ✅ 단위 테스트
+Testcode
+├── ExpressServer
+│   └── server.js
+├── Frontend
+│   ├── cypress (E2E)
+│   │   └── e2e/app.cy.js
+│   └── src/components
+│       ├── Counter (예제 1)
+│       └── Login (예제 2)
+│           ├── pages
+│           ├── store
+│           └── tests
+│               ├── App.test.tsx (통합)
+│               ├── Login.test.tsx (단위)
+│               ├── Dashboard.test.tsx (단위)
+│               └── useAuth.test.tsx (단위)
 
-yaml
-복사
-편집
 
 ---
 
@@ -49,17 +45,14 @@ yaml
 
 ### 1️⃣ pnpm 설치
 
-```bash
+```
+bash
 npm install -g pnpm
 2️⃣ 프로젝트 클론
 bash
-복사
-편집
 git clone https://github.com/csb1320/Testcode.git
 🖥 Express API 서버 실행
 bash
-복사
-편집
 cd Testcode/ExpressServer
 pnpm install
 pnpm start
@@ -67,8 +60,6 @@ pnpm start
 
 💻 프론트엔드 실행
 bash
-복사
-편집
 cd ../Frontend
 pnpm install
 pnpm dev
@@ -77,13 +68,9 @@ pnpm dev
 ✅ 테스트 실행
 ▶ 단위 + 통합 테스트 (Vitest)
 bash
-복사
-편집
 pnpm test
 ▶ E2E 테스트 (Cypress)
 bash
-복사
-편집
 pnpm cypress open
 🧪 테스트 계층 설명
 테스트 종류	설명	예시 파일
