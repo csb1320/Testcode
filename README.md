@@ -78,10 +78,9 @@ pnpm dev
 접속 주소: http://localhost:5173
 
 ### ✅ 테스트 실행
-▶ 단위 + 통합 테스트 (Vitest)
+▶ 단위 테스트 (Vitest)
 ```
-pnpm test
-```
+test src/components/Login/tests/useAuth.test.tsx```
 ▶ E2E 테스트 (Cypress)
 ```
 pnpm cypress
