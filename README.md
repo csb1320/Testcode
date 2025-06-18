@@ -6,7 +6,7 @@
 ---
 
 ## 📁 프로젝트 구조
-
+```
 Testcode
 |
 ├── ExpressServer
@@ -18,16 +18,17 @@ Testcode
 │ │ └── e2e/app.cy.js
 │ │
 │ └── src/components
-│ ├── Counter (예제 1)
-│ └── Login (예제 2)
-│ ├── pages
-│ ├── store
-│ └── tests
-│ ├── App.test.tsx (통합)
-│ ├── Login.test.tsx (단위)
-│ ├── Dashboard.test.tsx (단위)
-│ └── useAuth.test.tsx (단위)
+│   ├── Counter (카운팅)
+  │ └── Login (로그인)
+│     ├── pages
+│     ├── store
+│     └── tests
+│       ├── Login.test.tsx (단위)
+│       ├── Dashboard.test.tsx (단위)
+│       └── useAuth.test.tsx (단위)
+│     ├── App.test.tsx (통합)
 
+```
 
 ---
 
