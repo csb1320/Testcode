@@ -15,7 +15,7 @@ beforeEach(() => {
         json: () =>
           Promise.resolve({
             message: "Login successful",
-            user: { id: 1, name: "Alice" },
+            user: { id: 1, name: "조성빈" },
           }),
       } as unknown as Response);
     }
@@ -28,7 +28,7 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
-test("아이디, 비밀번호 입력 후 로그인 버튼 클릭 시 user가 설정된다", async () => {
+test("아이디, 비밀번호 입력 후 로그인 버튼 클릭 시 로그인된다", async () => {
   render(
     <MemoryRouter>
       <Login />
@@ -36,16 +36,16 @@ test("아이디, 비밀번호 입력 후 로그인 버튼 클릭 시 user가 설
   );
 
   fireEvent.change(screen.getByPlaceholderText("Username"), {
-    target: { value: "alice" },
+    target: { value: "조성빈" },
   });
 
   fireEvent.change(screen.getByPlaceholderText("Password"), {
-    target: { value: "1234" },
+    target: { value: "4242" },
   });
 
   fireEvent.click(screen.getByRole("button", { name: "로그인" }));
 
   await waitFor(() => {
-    expect(useAuthStore.getState().user).toEqual({ id: 1, name: "Alice" });
+    expect(useAuthStore.getState().user).toEqual({ id: 1, name: "조성빈" });
   });
 });

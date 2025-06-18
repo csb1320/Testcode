@@ -11,7 +11,7 @@ test("초기 상태는 로그인되지 않은 상태여야 한다", () => {
 });
 
 test("login 함수 호출 시 user가 설정된다", () => {
-  const mockUser = { id: 1, name: "Alice" };
+  const mockUser = { id: 1, name: "조성빈" };
 
   useAuthStore.getState().login(mockUser);
 
@@ -19,7 +19,7 @@ test("login 함수 호출 시 user가 설정된다", () => {
 });
 
 test("logout 함수 호출 시 user가 null이 된다", () => {
-  const mockUser = { id: 1, name: "Alice" };
+  const mockUser = { id: 1, name: "조성빈" };
 
   useAuthStore.getState().login(mockUser);
   useAuthStore.getState().logout();

@@ -7,13 +7,16 @@ import { useAuthStore } from "../store/useAuthStore";
 // 매 테스트 전에 user 세팅
 beforeEach(() => {
   useAuthStore.setState({
-    user: { id: 1, name: "Alice" },
+    user: {
+      id: 1,
+      name: "조성빈",
+    },
   });
 });
 
 test("대시보드 문구가 정상 출력된다", () => {
   render(<Dashboard />);
   expect(
-    screen.getByText(/Alice님! 대시보드에 오신 것을 환영합니다!/i)
+    screen.getByText(/조성빈님! 대시보드에 오신 것을 환영합니다!/i)
   ).toBeInTheDocument();
 });
