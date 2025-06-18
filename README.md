@@ -8,9 +8,11 @@
 ## 📁 프로젝트 구조
 
 Testcode
+|
 ├── ExpressServer
 │ └── server.js
 │
+|
 ├── Frontend
 │ ├── cypress (E2E)
 │ │ └── e2e/app.cy.js
