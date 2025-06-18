@@ -6,23 +6,25 @@
 ---
 
 ## 📁 프로젝트 구조
-Testcode
+
 Testcode
 ├── ExpressServer
-│   └── server.js
+│ └── server.js
+│
 ├── Frontend
-│   ├── cypress (E2E)
-│   │   └── e2e/app.cy.js
-│   └── src/components
-│       ├── Counter (예제 1)
-│       └── Login (예제 2)
-│           ├── pages
-│           ├── store
-│           └── tests
-│               ├── App.test.tsx (통합)
-│               ├── Login.test.tsx (단위)
-│               ├── Dashboard.test.tsx (단위)
-│               └── useAuth.test.tsx (단위)
+│ ├── cypress (E2E)
+│ │ └── e2e/app.cy.js
+│ │
+│ └── src/components
+│ ├── Counter (예제 1)
+│ └── Login (예제 2)
+│ ├── pages
+│ ├── store
+│ └── tests
+│ ├── App.test.tsx (통합)
+│ ├── Login.test.tsx (단위)
+│ ├── Dashboard.test.tsx (단위)
+│ └── useAuth.test.tsx (단위)
 
 
 ---
