@@ -70,7 +70,7 @@ pnpm start
 
 ### 💻 프론트엔드 실행
 ```
-cd ../Frontend
+cd Testcode/Frontend
 pnpm install
 pnpm dev
 ```
@@ -80,12 +80,12 @@ pnpm dev
 ### ✅ 테스트 실행
 ▶ 단위 테스트 (Vitest)
 ```
-test src/components/Login/tests/useAuth.test.tsx
+pnpm test src/components/Login/tests/useAuth.test.tsx
 ```
 
 ▶ 통합 테스트 (Vitest)
 ```
-test src/components/Login/tests/App.test.tsx
+pnpm test src/components/Login/tests/App.test.tsx
 ```
 
 ▶ E2E 테스트 (Cypress)
