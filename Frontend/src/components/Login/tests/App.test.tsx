@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import App from "../../../App";
+import App from "../App";
 import { beforeEach, afterEach, vi, expect, test } from "vitest";
 import "@testing-library/jest-dom";
 import { useAuthStore } from "../store/useAuthStore";

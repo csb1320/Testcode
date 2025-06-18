@@ -1,12 +1,12 @@
-import { useAuthStore } from "./components/Login/store/useAuthStore";
+import { useAuthStore } from "./store/useAuthStore";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
-import Login from "./components/Login/pages/Login";
-import Dashboard from "./components/Login/pages/Dashboard";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   const user = useAuthStore((state) => state.user);
