@@ -16,8 +16,10 @@ app.use(express.json());
 
 // 메모리 기반 데이터
 let users = [
-  { id: 1, username: "alice", password: "1234", name: "Alice" },
-  { id: 2, username: "bob", password: "5678", name: "Bob" },
+  { id: 1, username: "조성빈", password: "4242", name: "조성빈" },
+  { id: 2, username: "정유열", password: "3260", name: "정유열" },
+  { id: 3, username: "임두현", password: "8088", name: "임두현" },
+  { id: 4, username: "김수민", password: "9126", name: "김수민" },
 ];
 
 // ✅ 로그인 API (Public)
@@ -32,43 +34,12 @@ app.post("/api/login", (req, res) => {
   res.json({ message: "Login successful", user: safeUser });
 });
 
-// ✅ 전체 사용자 조회 (Public)
+// ✅ 전체 사용자 조회
 app.get("/api/users", (req, res) => {
   res.json(users);
 });
 
-// ✅ 특정 사용자 조회 (Public)
-app.get("/api/users/:id", (req, res) => {
-  const user = users.find((u) => u.id === parseInt(req.params.id));
-  if (!user) return res.status(404).json({ error: "User not found" });
-  res.json(user);
-});
-
-// ✅ 사용자 추가 (Public)
-app.post("/api/users", (req, res) => {
-  const newUser = {
-    id: users.length + 1,
-    name: req.body.name,
-  };
-  users.push(newUser);
-  res.status(201).json(newUser);
-});
-
-// ✅ 사용자 수정 (Public)
-app.put("/api/users/:id", (req, res) => {
-  const user = users.find((u) => u.id === parseInt(req.params.id));
-  if (!user) return res.status(404).json({ error: "User not found" });
-  user.name = req.body.name;
-  res.json(user);
-});
-
-// ✅ 사용자 삭제 (Public)
-app.delete("/api/users/:id", (req, res) => {
-  users = users.filter((u) => u.id !== parseInt(req.params.id));
-  res.json({ message: "User deleted" });
-});
-
 // 서버 시작
 app.listen(port, () => {
-  console.log(`✅ Public API 서버 실행 중: http://localhost:${port}`);
+  console.log(`✅ API 서버 실행 중: http://localhost:${port}`);
 });
