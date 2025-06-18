@@ -30,17 +30,17 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <div className={styles.title}>로그인</div>
+        <div className={styles.title}>Login</div>
         <input
           type="text"
-          placeholder="아이디"
+          placeholder="Username"
           className={styles.input}
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="password"
-          placeholder="비밀번호"
+          placeholder="Password"
           className={styles.input}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
