@@ -46,39 +46,50 @@ Testcode
 ### 1️⃣ pnpm 설치
 
 ```
-bash
 npm install -g pnpm
-2️⃣ 프로젝트 클론
-bash
+```
+
+
+### 2️⃣ 프로젝트 클론
+```
 git clone https://github.com/csb1320/Testcode.git
+```
+
 🖥 Express API 서버 실행
-bash
+```
 cd Testcode/ExpressServer
 pnpm install
 pnpm start
+```
+
 서버는 http://localhost:4000 에서 실행됩니다.
 
-💻 프론트엔드 실행
-bash
+### 💻 프론트엔드 실행
+```
 cd ../Frontend
 pnpm install
 pnpm dev
+```
+
 접속 주소: http://localhost:5173
 
-✅ 테스트 실행
+### ✅ 테스트 실행
 ▶ 단위 + 통합 테스트 (Vitest)
-bash
+```
 pnpm test
+```
 ▶ E2E 테스트 (Cypress)
-bash
+```
 pnpm cypress open
-🧪 테스트 계층 설명
+```
+
+### 🧪 테스트 계층 설명
 테스트 종류	설명	예시 파일
 단위 테스트	개별 컴포넌트/함수의 최소 단위 테스트	Login.test.tsx, useAuth.test.tsx
 통합 테스트	컴포넌트들이 조합되어 UI 흐름이 동작하는지 테스트	App.test.tsx
 E2E 테스트	사용자가 실제로 입력하고 화면이 바뀌는 전체 흐름을 테스트	cypress/e2e/app.cy.js
 
-👥 테스트 사용자 예시
+### 👥 테스트 사용자 예시
 이름	아이디	비밀번호
 조성빈	조성빈	4242
 정유열	정유열	3260
