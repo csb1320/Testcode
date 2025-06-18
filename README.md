@@ -80,7 +80,14 @@ pnpm dev
 ### ✅ 테스트 실행
 ▶ 단위 테스트 (Vitest)
 ```
-test src/components/Login/tests/useAuth.test.tsx```
+test src/components/Login/tests/useAuth.test.tsx
+```
+
+▶ 통합 테스트 (Vitest)
+```
+test src/components/Login/tests/App.test.tsx
+```
+
 ▶ E2E 테스트 (Cypress)
 ```
 pnpm cypress
