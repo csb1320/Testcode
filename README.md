@@ -96,7 +96,7 @@ pnpm cypress
 ### 🧪 테스트 계층 설명
 | 테스트 종류  | 설명                     | 예시 파일                                |
 | ------- | ---------------------- | ------------------------------------ |
-| 단위 테스트  | 개별 컴포넌트/함수의 최소 단위 테스트  | `Login.test.tsx`, `useAuth.test.tsx` |
+| 단위 테스트  | 개별 컴포넌트/함수의 최소 단위 테스트  | `Login.test.tsx`, `Dashboard.test.tsx` ,`useAuth.test.tsx` |
 | 통합 테스트  | 컴포넌트 조합의 UI 흐름 테스트     | `App.test.tsx`                       |
 | E2E 테스트 | 실제 사용자의 전체 시나리오 흐름 테스트 | `cypress/e2e/app.cy.js`              |
 
